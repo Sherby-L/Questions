@@ -1,23 +1,29 @@
-import logo from './logo.svg';
+import React from 'react';
+
 import './App.css';
+import Result from './components/Result';
+import Game from './components/Game';
+import questions from './components/questions';
 
 function App() {
+  const [step, setStep] = React.useState(0);
+  const [correct, setCorrect] = React.useState(0);
+  const question = questions[step];
+
+  const onClickVariant = (index) => {
+    setStep(step + 1);
+    if (index === question.correct) {
+      setCorrect(correct + 1);
+    }
+  };
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {step !== questions.length ? (
+        <Game step={step} question={question} onClickVariant={onClickVariant} />
+      ) : (
+        <Result correct={correct} />
+      )}
     </div>
   );
 }
