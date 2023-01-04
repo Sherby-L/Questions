@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/Questions/static/css/main.54742b64.css",
-    "main.js": "/Questions/static/js/main.903e3389.js",
+    "main.js": "/Questions/static/js/main.6559c5fa.js",
     "static/media/kot.jpg": "/Questions/static/media/kot.ff633742eefc59015d2f.jpg",
     "index.html": "/Questions/index.html",
     "main.54742b64.css.map": "/Questions/static/css/main.54742b64.css.map",
-    "main.903e3389.js.map": "/Questions/static/js/main.903e3389.js.map"
+    "main.6559c5fa.js.map": "/Questions/static/js/main.6559c5fa.js.map"
   },
   "entrypoints": [
     "static/css/main.54742b64.css",
-    "static/js/main.903e3389.js"
+    "static/js/main.6559c5fa.js"
   ]
 }
